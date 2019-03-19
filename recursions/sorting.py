@@ -1,52 +1,3 @@
-def sum_array(array):
-
-    '''Return sum of all items in array'''
-
-    if len(array)==0:
-        return 0
-    else:
-        return array[0] + sum_array(array[1:])
-
-################################
-
-def fibonacci(n):
-
-    '''Return nth term in fibonacci sequence'''
-    if n <= 1:
-        return 1
-    return fibonacci(n - 2) + fibonacci(n - 1)
-
-fibonacci(5)
-
-#############################
-
-def factorial(n):
-
-    '''Return n!'''
-    if n == 1:
-        return n
-    else:
-        return n * factorial(n-1)
-
-factorial(3)
-
-
-#################################
-def reverse(word):
-
-    '''Return word in reverse'''
-    if len(word) == 0:
-        return word
-    else:
-        return reverse(word[1:]) + word[0]
-
-
-reverse("sdfgfdgd")
-
-reverse("helloooooo")
-
-###################################
-
 def bubble_sort(items):
 
     '''Return array of items, sorted in ascending order'''
@@ -101,5 +52,3 @@ def quick_sort(items):
     large = quick_sort(large)
 
     return small + dup + large
-
-    ########################################
